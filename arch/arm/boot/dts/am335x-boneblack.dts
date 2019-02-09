@@ -26,3 +26,12 @@
 		opp-supported-hw = <0x06 0x0100>;
 	};
 };
+
+&i2c1 {
+        status = "okay";
+        clock-frequency = <100000>;
+        nunchuk@52 {
+                compatible = "nintendo,nunchuk";
+		reg = <0x52>;
+        };
+};
